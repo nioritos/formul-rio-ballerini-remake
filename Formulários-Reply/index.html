@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Formulário - Balle</title>
+</head>
+
+<body>
+        <main class="content-box">
+        <form action="" method="post">
+            <fieldset>
+                <div class="content">
+                    <div class="welcome">
+                        <h1>Cadastro de Devs</h1>
+                        <p>complete suas informações</p>
+                    </div>
+                    <div class="name-dev">
+                        <div class="first-name">
+                            <label for="first-name">Nome</label> <br>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+                        
+                        <div class="second-name">
+                            <label for="second-name">Sobrenome</label><br>
+                            <input type="text" name="second-name" id="second-name" required> 
+                        </div>
+                    </div>
+
+                    <div class="email">
+                        <label for="email-dev">Email</label> <br>   
+                        <input type="email" name="email-dev" id="email-dev">
+                    </div>
+
+                    <div class="areas-dev">
+                        <h2>Em que área você desenvolve?</h2>
+                        <br>
+                        <input type="radio" name="area-dev" id="front-end-area" aria-checked="true">
+                        <label for="front-end-area">Front-End</label>
+                        <br>
+                        <input type="radio" name="area-dev" id="back-end-area">
+                        <label for="back-end-area">Back-End</label>
+                        <br>
+                        <input type="radio" name="area-dev" id="area-dev">
+                        <label for="fullstack-area">FullStack</label>
+                    </div>
+
+                    <div class="senioridade-dev">
+                        <h3>Senioridade</h3>
+                        <select name="campo-select-senioridade" id="campo-select">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="text">Senior</option>
+                            <option value="text">Pleno</option>
+                            <option value="text">Junior</option>
+                        </select>
+                    </div>
+
+                    <div class="techs-dev">
+                        <h4>Selecione as tecnologias que você utiliza:</h4>
+                        <input type="checkbox" id="tecnologia1" name="css" value="HTML">
+                        <label for="tecnologia1">HTML5</label>
+
+                        <input type="checkbox" id="tech2" name="css" value="css">
+                        <label for="tech2">CSS3</label>
+
+                        <input type="checkbox" id="tech3" name="js" value="js">
+                        <label for="tech3">JavaScript</label>
+
+                        <input type="checkbox" id="tech4" name="NODEJS" value="NODEJS">
+                        <label for="tech2">Nodejs</label>
+
+                        <input type="checkbox" id="tech2" name="c#" value="c#">
+                        <label for="tech2">C#</label>
+                    </div>
+
+                    <div class="about-dev"> 
+                        <h4>Me conte mais sobre você:</h4>
+                        <textarea name="" id="" cols="70" rows="6" placeholder="digite aqui..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" id="submit-form">
+                    Concluído
+                </button>
+            </fieldset>
+        </form>
+
+    </main>
+</body>
+
+</html>
